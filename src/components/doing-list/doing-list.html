@@ -1,0 +1,12 @@
+<!-- Generated template for the DoingListComponent component -->
+<ion-list>
+   <ion-item-sliding  *ngFor="let prograssItem of progressItems; let i=index">
+     <ion-item>{{prograssItem}}</ion-item>
+     <ion-item-options side="right">
+        <button ion-button icon-only color="primary" (click)="addToCompleted(i)">
+          <ion-icon name="checkmark"></ion-icon>
+        </button>
+      </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+<ion-list>
